@@ -1,0 +1,308 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body{
+min-height: 100vh;
+background-color: #070416;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.titulo{
+    background-color:#0D0927;
+    color:beige;
+    width:100%;
+    padding:20px;
+    border: 5px solid rgb(158, 158, 27);
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+     display: flex;
+     flex-direction: row; 
+     justify-content: space-between;
+     align-items: center;
+}
+
+.titulo h1{
+    font-size: 60px;
+    transition: 0.9s;
+}
+.titulo h1:hover{
+    color:rgb(158, 158, 27);
+    transform: scale(1.1);
+}
+
+.nav{
+   font-size: 30px;
+     
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    list-style: none;
+    
+}
+.menu a{
+   text-decoration: none;
+   color: beige;
+}
+.menu a:hover{
+  color:rgb(158, 158, 27);
+  transition: 0.9s;
+}
+.Imenu{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.Imenu img{
+  width: 70vw;
+  height: 500px;
+  border: 5px solid rgb(158, 158, 27);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.botao{
+    display: flex;
+    flex-direction:column;
+    text-decoration: none;
+    
+}
+.botao button{
+    cursor:pointer;
+    margin-top: 10px;
+    font-size: 30px;
+    padding-left:5px;
+    background-color: rgb(43, 15, 95);
+    border: 3px solid rgb(202, 202, 34);
+    border-radius: 10px;
+    transition: 0.9s;
+    color: rgb(199, 199, 28)  
+    
+}
+.botao button:hover{
+    transform:scale(1.1);
+}
+
+.Planos{
+   display: flex;
+   justify-content: center;
+   font-size: 40px;
+   margin-top: 150px;
+   margin-bottom: 60px;
+   color: rgb(230, 230, 10);  
+}
+.Alinhar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.Basico h3{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+.Basico{
+    background-color: #0e0835;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border: 5px solid rgb(158, 158, 27);
+    border-radius: 15px;
+    width: 500px;
+    height: 500px;
+    color: bisque;
+}
+.conteudo1{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    padding-left: 30px;
+    flex: 1;
+   
+   
+    
+}
+.conteudo1 li{
+    margin-top: 30px;
+}
+.Plus h3{
+    color: bisque;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+.Plus{
+    background-color: #0e0835;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border: 5px solid rgb(158, 158, 27);
+    border-radius: 15px;
+    width: 500px;
+    height: 500px;
+}
+.conteudo2{
+     display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    color: bisque;
+    padding-left: 30px;
+      flex: 1;
+   
+}
+.conteudo2 li{
+    margin-top: 30px;}
+
+.Giga h3{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+.Giga{
+     background-color: #0e0835;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border: 5px solid rgb(158, 158, 27);
+    border-radius: 15px;
+    width: 500px;
+    height: 500px;
+    color: bisque;
+    
+    
+}
+
+.conteudo3{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    padding-left: 30px;
+     flex: 1;
+     
+  
+}
+.conteudo3 li{
+    margin-top: 30px;
+}
+
+.botao1 button{
+    cursor:pointer;
+    font-size: 30px; 
+    background-color: rgb(43, 15, 95);
+    border: 3px solid rgb(202, 202, 34);
+    border-radius: 10px;
+    transition: 0.9s;
+    padding-left: 5px;
+    color: rgb(199, 199, 28) 
+    
+    
+}
+.botao2 button{
+  
+    cursor:pointer;   
+    font-size: 30px;
+    background-color: rgb(43, 15, 95);
+    border: 3px solid rgb(202, 202, 34);
+    border-radius: 10px;
+    transition: 0.9s;
+    padding-left: 5px;
+    color: rgb(199, 199, 28) 
+}
+.botao3 button{
+     
+    cursor:pointer;  
+    font-size: 30px;
+    background-color: rgb(43, 15, 95);
+    border: 3px solid rgb(202, 202, 34);
+    border-radius: 10px;
+    transition: 0.9s;
+    padding-left: 5px;
+    color: rgb(199, 199, 28);
+}
+.botao1{
+    margin-top:auto;
+    margin-bottom: 30px;
+    margin-left: 25%;
+}
+.botao2{
+    margin-top:auto;
+    margin-bottom: 30px;
+    margin-left: 25%;
+}   
+.botao3{
+    margin-top:auto;
+    margin-bottom: 30px;
+    margin-left: 25%;
+}
+
+.botao1 button:hover{
+    transform:scale(1.1);
+}
+.botao2 button:hover{
+    transform:scale(1.1);
+}
+.botao3 button:hover{
+    transform:scale(1.1);
+}
+.alinhar2{
+    display: flex;
+    flex-direction: column;
+}
+.Sobre h2{
+    display: flex;
+    justify-content: center;
+    color:  rgb(230, 230, 10);
+    font-size: 60px;
+    margin-top: 100px;
+    padding-bottom: 10px;
+}
+.texto{
+    background-color:#0e0835 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: bisque;
+    border: 5px solid rgb(158, 158, 27);
+    border-radius: 15px;
+    font-size: 30px;
+    width: 60%;
+    margin: 0 auto;
+}
+.texto p{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+#NM{
+    margin-bottom: 40px;
+}
+.dados li{
+    padding-bottom: 10px;
+}
+.rodape{
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    background-color:#0e0835 ;
+    color: bisque;
+    border: 2px solid rgb(230, 230, 10);
+    border-radius: 10px;
+    margin-top: 200px;
+    width: 100%;
+    padding: 30px;
+    
+}
+.rodape p{
+    font-size: 25px;
+}
+.Nox{
+    font-size: 30px;
+}
+
+
