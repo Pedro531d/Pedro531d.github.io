@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Exercícios JS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+        }
+        .exercicio {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        input {
+            width: 60px;
+            margin: 4px;
+            padding: 4px;
+        }
+        button {
+            margin-top: 8px;
+            padding: 5px 12px;
+            cursor: pointer;
+        }
+        .resultado {
+            margin-top: 10px;
+            color: darkblue;
+            font-weight: bold;
+        }
+    </style>
+    <script src="funcoes.js"></script>
+</head>
+<body>
+
+<h1>Lista de Exercícios - JavaScript</h1>
+
+<div class="exercicio">
+    <h3>1) MAIOR_MENOR</h3>
+    <p>Digite 5 valores inteiros:</p>
+    <input type="number" id="mm1" placeholder="a">
+    <input type="number" id="mm2" placeholder="b">
+    <input type="number" id="mm3" placeholder="c">
+    <input type="number" id="mm4" placeholder="d">
+    <input type="number" id="mm5" placeholder="e">
+    <br>
+    <button onclick="chamarMaiorMenor()">Executar</button>
+    <div class="resultado" id="res1"></div>
+</div>
+
+<div class="exercicio">
+    <h3>2) VOGAL</h3>
+    <p>Digite um caractere:</p>
+    <input type="text" id="vogalInput" maxlength="1" placeholder="c">
+    <button onclick="chamarVogal()">Executar</button>
+    <div class="resultado" id="res2"></div>
+</div>
+
+<div class="exercicio">
+    <h3>3) LIMITES</h3>
+    <p>Digite o limite inferior e superior do intervalo:</p>
+    <input type="number" id="li" placeholder="li">
+    <input type="number" id="ls" placeholder="ls">
+    <button onclick="chamarLimites()">Executar</button>
+    <div class="resultado" id="res3"></div>
+</div>
+
+<div class="exercicio">
+    <h3>4) ORDEM</h3>
+    <p>Digite 3 valores inteiros:</p>
+    <input type="number" id="ord1" placeholder="a">
+    <input type="number" id="ord2" placeholder="b">
+    <input type="number" id="ord3" placeholder="c">
+    <button onclick="chamarOrdem()">Executar</button>
+    <div class="resultado" id="res4"></div>
+</div>
+
+<div class="exercicio">
+    <h3>5) POSITIVO_NEGATIVO</h3>
+    <p>Digite um valor inteiro:</p>
+    <input type="number" id="posNeg" placeholder="x">
+    <button onclick="chamarPosNeg()">Executar</button>
+    <div class="resultado" id="res5"></div>
+</div>
+
+<div class="exercicio">
+    <h3>6) PAR_IMPAR</h3>
+    <p>Digite um valor inteiro:</p>
+    <input type="number" id="parImpar" placeholder="x">
+    <button onclick="chamarParImpar()">Executar</button>
+    <div class="resultado" id="res6"></div>
+</div>
+
+<script>
+    function chamarMaiorMenor() {
+        var a = Number(document.getElementById("mm1").value);
+        var b = Number(document.getElementById("mm2").value);
+        var c = Number(document.getElementById("mm3").value);
+        var d = Number(document.getElementById("mm4").value);
+        var e = Number(document.getElementById("mm5").value);
+        document.getElementById("res1").innerHTML = MAIOR_MENOR(a, b, c, d, e);
+    }
+
+    function chamarVogal() {
+        var c = document.getElementById("vogalInput").value;
+        var resultado = VOGAL(c);
+        if (resultado == 1) {
+            document.getElementById("res2").innerHTML = "É vogal";
+        } else {
+            document.getElementById("res2").innerHTML = "Não é vogal";
+        }
+    }
+
+    function chamarLimites() {
+        var li = Number(document.getElementById("li").value);
+        var ls = Number(document.getElementById("ls").value);
+        document.getElementById("res3").innerHTML = LIMITES(li, ls);
+    }
+
+    function chamarOrdem() {
+        var a = Number(document.getElementById("ord1").value);
+        var b = Number(document.getElementById("ord2").value);
+        var c = Number(document.getElementById("ord3").value);
+        document.getElementById("res4").innerHTML = "Ordem crescente: " + ORDEM(a, b, c);
+    }
+
+    function chamarPosNeg() {
+        var x = Number(document.getElementById("posNeg").value);
+        var res = POSITIVO_NEGATIVO(x);
+        if (res == true) {
+            document.getElementById("res5").innerHTML = "Positivo";
+        } else {
+            document.getElementById("res5").innerHTML = "Negativo";
+        }
+    }
+
+    function chamarParImpar() {
+        var x = Number(document.getElementById("parImpar").value);
+        var res = PAR_IMPAR(x);
+        if (res == true) {
+            document.getElementById("res6").innerHTML = "Par";
+        } else {
+            document.getElementById("res6").innerHTML = "Ímpar";
+        }
+    }
+</script>
+
+</body>
+</html>
