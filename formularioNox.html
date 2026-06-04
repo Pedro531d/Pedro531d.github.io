@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="CSS/Formulario.css">
+    <title>Formulario de Assinatura</title>
+</head>
+<body>
+  
+    <header>
+        <div class="titulo">
+          <h1>Formulario de Assinatura!</h1>
+          <h2><a href="NoxNet.html">Voltar aos Planos</a></h2>
+        </div>
+    </header>
+
+    <section class="dados">
+        <br><br>
+        <div class="formulario">
+        
+      <form>
+        <br>
+         <h2>DADOS</h2>
+         <br>
+
+        <label for="nome">Nome:</label>
+        <input id="nome" type="text" placeholder="Seu Nome" required>
+        <br><br>
+
+       <label for="numero">Telefone:</label>
+        <input id="numero" type="tel" placeholder="(xx) xxxxx-xxxx" required> 
+        <br><br>
+       
+      
+       <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="Seu Email" required> 
+         <br><br>
+        
+        <label for="endereco">Endereço: </label>
+        <input id="endereco" type="text" placeholder="Rua,Bairro,Numero," required> 
+        <br><br>
+        <label for="CPF">CPF: </label>
+        <input id="CPF" type="text" placeholder="000.000.000-00" required>
+        <br><br>
+        <label>Planos:</label>
+        <select required id="Plano">
+                
+                <option value="" selected disabled >Selecione um Plano!</option>
+                <option value="basico">Básico 🟡 - R$ 49,90/mês</option>
+                <option value="plus">Plus 🟠 - R$ 79,90/mês</option>
+                <option value="giga">Giga ⚡ - R$ 149,90/mês</option>
+            </select>
+            <br><br>
+        <button  type="submit">Confirmar Assinatura </button>
+
+      </form>
+     </div>
+
+       <div id="Assinatura" style="display: none;" >
+        <div class="conteudo" >
+            <p>⚡Parabens⚡!!, sua assinatura foi feita, entraremos em contato pelo número digitado.</p>
+            <br>
+            <button id="fechar2" class="fechar" onclick="fechar()">Fechar!</button>
+
+        </div>
+      </div>
+      
+
+
+
+
+
+    </section>
+    <script src="JavaScript/formulario.js"></script>
+    
+</body>
+</html>
