@@ -30,6 +30,7 @@ html{
 }
 
 .titulo h1{
+    cursor:pointer;
     font-size: 60px;
     transition: 0.9s;
 }
@@ -180,47 +181,51 @@ html{
     margin-top: 30px;
 }
 
-.botao1 button{
+.a1 a{
     cursor:pointer;
+    transition: 0.9s;
     font-size: 30px; 
     background-color: rgb(43, 15, 95);
     border: 3px solid rgb(202, 202, 34);
     border-radius: 10px;
-    transition: 0.9s;
     padding-left: 5px;
+    text-decoration: none;
     color: rgb(199, 199, 28) 
+    
 }
-.botao2 button{
+.a2 a{
     cursor:pointer;   
     font-size: 30px;
     background-color: rgb(43, 15, 95);
     border: 3px solid rgb(202, 202, 34);
     border-radius: 10px;
-    transition: 0.9s;
     padding-left: 5px;
+    text-decoration: none;
     color: rgb(199, 199, 28) 
+    
 }
-.botao3 button{
+.a3 a{
     cursor:pointer;  
     font-size: 30px;
     background-color: rgb(43, 15, 95);
     border: 3px solid rgb(202, 202, 34);
     border-radius: 10px;
-    transition: 0.9s;
     padding-left: 5px;
     color: rgb(199, 199, 28);
+    text-decoration: none;
+   
 }
-.botao1{
+.a1{
     margin-top:auto;
     margin-bottom: 30px;
     margin-left: 25%;
 }
-.botao2{
+.a2{
     margin-top:auto;
     margin-bottom: 30px;
     margin-left: 25%;
 }   
-.botao3{
+.a3{
     margin-top:auto;
     margin-bottom: 30px;
     margin-left: 25%;
@@ -235,14 +240,17 @@ list-style: none;
 list-style: none;
 }
 
-.botao1 button:hover{
+.a1:hover{
     transform:scale(1.1);
+    transition: 0.9s;
 }
-.botao2 button:hover{
+.a2:hover{
     transform:scale(1.1);
+    transition: 0.9s;
 }
-.botao3 button:hover{
+.a3:hover{
     transform:scale(1.1);
+    transition: 0.9s;
 }
 .alinhar2{
     display: flex;
@@ -295,4 +303,18 @@ list-style: none;
 }
 .Nox{
     font-size: 30px;
+}
+
+#topo {
+  position: fixed;
+  bottom: 80px; 
+  right: 820px;
+  font-size: 25px;
+  padding: 10px 15px;
+  background-color: rgb(43, 15, 95);
+  border: 3px solid rgb(202, 202, 34);
+  border-radius: 10px;
+  color: rgb(199, 199, 28);
+  cursor: pointer;
+  display: none;
 }
